@@ -1,0 +1,75 @@
+/* STYLES GENERAUX */
+*{
+	margin: 0;
+	box-sizing: border-box;
+	font-family: verdana, sans serif;
+}
+body{
+	font-weight: 300;
+	font-size: .9rem; /* rem ⮕ unité de taille relative à l'élément parent */
+	line-height: 1.5;
+}
+a{ /*apparence des liens */
+	text-decoration: none;
+	color: steelblue;
+}
+a:hover{ /* changement d'apparence lorsque la souris survole un lien */
+	text-decoration: underline;
+	font-weight: bold;
+}
+p{
+	margin: 0 0 1rem; 
+}
+h1{ /* apparence des titres de niveau 1 */
+	margin: 0 0 1rem; 
+	font-size: 2.5rem;
+	margin-bottom: .5rem;
+}
+h2{ /* apparence des titres de niveau 2 */
+	margin: 0 0 1rem;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+.texte-bleu{
+	color: steelblue;
+}
+.texte-majuscule{
+	text-transform: uppercase;
+}
+.cv-container{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr; /* 3 colonnes, chacune occupe une des 3 fractions disponibles */
+	grid-template-areas: "left-column right-column right-column";
+	width: 1200px;
+	margin: 100px auto;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); /* rgba signifie Red-Green-Blue-Alpha. 
+	Les 3 premiers paramètres ⮕ RGB, et la 4ème, la composante, alpha, le niveau d'opacité de la couleur: 0 ⮕ complètement transparent 
+																									       1 ⮕ complètement opaque */
+}
+.section{
+	margin-bottom: 1.5rem;
+}
+/* COLONNE GAUCHE*/
+.colonne-gauche{
+	grid-area: left column;
+	padding: 50px;
+	background-color: hotpink; /* background-color : hotpink; F */
+	color: white;
+}
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
